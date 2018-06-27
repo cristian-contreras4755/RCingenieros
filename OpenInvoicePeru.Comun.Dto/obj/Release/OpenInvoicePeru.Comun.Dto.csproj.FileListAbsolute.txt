@@ -1,0 +1,8 @@
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun.Dto\bin\Release\OpenInvoicePeru.Comun.Dto.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun.Dto\bin\Release\OpenInvoicePeru.Comun.Dto.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun.Dto\bin\Release\Newtonsoft.Json.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun.Dto\bin\Release\Newtonsoft.Json.xml
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun.Dto\obj\Release\OpenInvoicePeru.Comun.Dto.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun.Dto\obj\Release\OpenInvoicePeru.Comun.Dto.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun.Dto\obj\Release\OpenInvoicePeru.Comun.Dto.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun.Dto\obj\Release\OpenInvoicePeru.Comun.Dto.pdb

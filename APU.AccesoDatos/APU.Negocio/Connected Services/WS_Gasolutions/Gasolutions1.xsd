@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/APU.Entidad" />
+  <xs:import schemaLocation="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/APU.Negocio" />
+  <xs:element name="VentaGasolutions_ListarCodigo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ventaGasolutionsId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_ListarCodigoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/APU.Entidad" minOccurs="0" name="VentaGasolutions_ListarCodigoResult" nillable="true" type="q1:ArrayOfVentaGasolutionsInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_Insertar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/APU.Entidad" minOccurs="0" name="ventaPetroamericaInfo" nillable="true" type="q2:VentaGasolutionsInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_InsertarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VentaGasolutions_InsertarResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_InsertarLote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/APU.Entidad" minOccurs="0" name="ventaPetroamericaInfo" nillable="true" type="q3:ArrayOfVentaGasolutionsInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_InsertarLoteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VentaGasolutions_InsertarLoteResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_InsertarXml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ventaXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_InsertarXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VentaGasolutions_InsertarXmlResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_InsertarGnvXml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ventaXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_InsertarGnvXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VentaGasolutions_InsertarGnvXmlResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/APU.Negocio" minOccurs="0" name="documento" nillable="true" type="q4:Documento" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/APU.Negocio" minOccurs="0" name="GenerarDocumentoResult" nillable="true" type="q5:Facturacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_InsertarNotaCreditoXml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="notaCreditoXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_InsertarNotaCreditoXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VentaGasolutions_InsertarNotaCreditoXmlResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_InsertarNotaDebitoXml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="notaDebitoXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaGasolutions_InsertarNotaDebitoXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VentaGasolutions_InsertarNotaDebitoXmlResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,16 @@
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\APU.AccesoDatos.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\APU.AccesoDatos.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\APU.Entidad.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\APU.Herramientas.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\DocumentFormat.OpenXml.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\Newtonsoft.Json.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\APU.Entidad.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\APU.Herramientas.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\bin\Release\DocumentFormat.OpenXml.xml
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\obj\Release\APU.AccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\obj\Release\APU.AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\obj\Release\APU.AccesoDatos.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\obj\Release\APU.AccesoDatos.pdb

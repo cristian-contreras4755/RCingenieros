@@ -1,0 +1,5 @@
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun\bin\Debug\OpenInvoicePeru.Comun.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun\bin\Debug\OpenInvoicePeru.Comun.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun\obj\Debug\OpenInvoicePeru.Comun.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun\obj\Debug\OpenInvoicePeru.Comun.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Comun\obj\Debug\OpenInvoicePeru.Comun.pdb

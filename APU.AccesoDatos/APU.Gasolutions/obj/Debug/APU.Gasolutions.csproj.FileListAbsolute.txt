@@ -1,0 +1,2 @@
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Gasolutions\obj\Debug\APU.Gasolutions.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Gasolutions\obj\Debug\APU.Gasolutions.csproj.CoreCompileInputs.cache

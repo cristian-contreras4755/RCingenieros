@@ -1,0 +1,8 @@
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Estructuras\bin\Debug\OpenInvoicePeru.Estructuras.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Estructuras\bin\Debug\OpenInvoicePeru.Estructuras.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Estructuras\bin\Debug\OpenInvoicePeru.Comun.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Estructuras\bin\Debug\OpenInvoicePeru.Comun.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Estructuras\obj\Debug\OpenInvoicePeru.Estructuras.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Estructuras\obj\Debug\OpenInvoicePeru.Estructuras.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Estructuras\obj\Debug\OpenInvoicePeru.Estructuras.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Estructuras\obj\Debug\OpenInvoicePeru.Estructuras.pdb

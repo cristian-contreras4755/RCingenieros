@@ -1,0 +1,5 @@
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Entidad\bin\Release\APU.Entidad.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Entidad\bin\Release\APU.Entidad.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Entidad\obj\Release\APU.Entidad.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Entidad\obj\Release\APU.Entidad.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Entidad\obj\Release\APU.Entidad.pdb

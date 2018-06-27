@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Boleta</title>
+</head>
+<body style="margin: 0; border: 1px none black;">
+    <table style="width: 30%; border: 1px none red;">
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <span style="text-decoration: underline;">TICKET BOLETA DE VENTA</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <span style="font-weight: bold;">@EMPRESA_NOMBRE</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <span style="font-weight: bold;">@EMPRESA_DIRECCION</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                Expedido en: @GRIFO_DIRECCION
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <span style="font-weight: bold;">RUC: @EMPRESA_RUC</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                ========================================
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                Maq. Regist. N&deg;: @IMPRESORA
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                Ticket N: @NUMEROCOMPROBANTE
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                Fecha: @FECHA
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                Nombre: @CLIENTE_NOMBRE
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                Direcci&oacute;n: @CLIENTE_DIRECCION
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                ========================================
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 50%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@CANTIDADx@PRECIO</td>
+            <td style="width: 50%; text-align: right;">@MONTO_VENTA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                @PRODUCTO
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                ========================================
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**** VALOR VTA. @MONEDA_SIMBOLO</td>
+            <td style="text-align: right;">@MONTO_VENTA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**** IGV:</td>
+            <td style="text-align: right;">@MONTO_IMPUESTO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <span style="font-weight: bold;">TOTAL: @MONTO_TOTAL</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">Vendedor: @VENDEDOR</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                ========================================
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <img src="@CODIGO_QR" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                ========================================
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                RESUMEN: @CODIGO_HASH
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                ========================================
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <span style="font-weight: bold;">Gracias por su compra!!!</span>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

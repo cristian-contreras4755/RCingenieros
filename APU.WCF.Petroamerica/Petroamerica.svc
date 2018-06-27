@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="APU.WCF.Petroamerica.Petroamerica" CodeBehind="Petroamerica.svc.cs" %>

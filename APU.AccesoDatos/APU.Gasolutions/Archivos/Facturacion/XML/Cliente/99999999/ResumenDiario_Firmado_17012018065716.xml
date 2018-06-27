@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SummaryDocuments xmlns="urn:sunat:names:specification:ubl:peru:schema:xsd:SummaryDocuments-1" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:sac="urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><Signature Id="SignOpenInvoicePeru" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>RhdeqYlysG0H9ibzfzU2MfFOUG8=</DigestValue></Reference></SignedInfo><SignatureValue>RWXcWGJkiY0lcuL9xIaFWREg0z2BaPztS37gTTcdFSQeOzfIu/dI/wgSWwodntp2UFd8QxkAuJWNXdj8p6QDctLTARPCIQAgt7YDwQrnFn/Eze468YmMTYQy0ELPyWIwHd93bq64R++zEovwDnzOjvHA0B2Jwjyzthi6QEqqpdCHV3XuX3q76hsObv4b6Nm4hs3giuakTnoCiQTjHZnR+aOKZIxGku5I90cbwFQd1jbsGdTzKhdXwEnYdVHQgsLonlmrGO3mOudU/r3qPe7a+sWU+a6+DexTHpMcgz4Ty+OOUNG0SXanQyah9C6RShsZgRJL5kBZIL5v3RPVn/Nalg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=PE, CN=RICARDO CALDERON URRIBARRI, G=RICARDO, SN=CALDERON URRIBARRI, T=GERENTE GENERAL, OU=20519069262, OU=GERENCIA, O=RICARDO CALDERON INGENIEROS SAC, OID.1.3.6.1.4.1.17326.30.4=DNI, OID.1.3.6.1.4.1.17326.30.3=20519069262, OID.1.3.6.1.4.1.17326.30.2=RUC, SERIALNUMBER=09610245, S=LIMA-LIMA, L=SAN MARTIN DE PORRES, Description=Qualified Certificate: RACER-PFVP-SW-KPSC, E=mramos@rcingenieros.com</X509SubjectName><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>2.0</cbc:UBLVersionID>
+  <cbc:CustomizationID>1.1</cbc:CustomizationID>
+  <cbc:ID>RC-20180117-001</cbc:ID>
+  <cbc:ReferenceDate>2018-01-16</cbc:ReferenceDate>
+  <cbc:IssueDate>2018-01-17</cbc:IssueDate>
+  <cac:Signature>
+    <cbc:ID>RC-20180117-001</cbc:ID>
+    <cac:SignatoryParty>
+      <cac:PartyIdentification>
+        <cbc:ID>20536053621</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name>EESS GASOLINAS DE AMERICA SAC</cbc:Name>
+      </cac:PartyName>
+    </cac:SignatoryParty>
+    <cac:DigitalSignatureAttachment>
+      <cac:ExternalReference>
+        <cbc:URI>20536053621-RC-20180117-001</cbc:URI>
+      </cac:ExternalReference>
+    </cac:DigitalSignatureAttachment>
+  </cac:Signature>
+  <cac:AccountingSupplierParty>
+    <cbc:CustomerAssignedAccountID>20536053621</cbc:CustomerAssignedAccountID>
+    <cbc:AdditionalAccountID>6</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[EESS GASOLINAS DE AMERICA SAC]]></cbc:RegistrationName>
+      </cac:PartyLegalEntity>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <sac:SummaryDocumentsLine>
+    <cbc:LineID>1</cbc:LineID>
+    <cbc:DocumentTypeCode>03</cbc:DocumentTypeCode>
+    <cbc:ID>B017-2085</cbc:ID>
+    <cac:AccountingCustomerParty>
+      <cbc:CustomerAssignedAccountID>99999999</cbc:CustomerAssignedAccountID>
+      <cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+    </cac:AccountingCustomerParty>
+    <cac:Status>
+      <cbc:ConditionCode>1</cbc:ConditionCode>
+    </cac:Status>
+    <sac:TotalAmount currencyID="PEN">25.00</sac:TotalAmount>
+    <sac:BillingPayment>
+      <cbc:PaidAmount currencyID="PEN">25.00</cbc:PaidAmount>
+      <cbc:InstructionID>01</cbc:InstructionID>
+    </sac:BillingPayment>
+  </sac:SummaryDocumentsLine>
+  <sac:SummaryDocumentsLine>
+    <cbc:LineID>2</cbc:LineID>
+    <cbc:DocumentTypeCode>03</cbc:DocumentTypeCode>
+    <cbc:ID>B017-2086</cbc:ID>
+    <cac:AccountingCustomerParty>
+      <cbc:CustomerAssignedAccountID>99999999</cbc:CustomerAssignedAccountID>
+      <cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+    </cac:AccountingCustomerParty>
+    <cac:Status>
+      <cbc:ConditionCode>1</cbc:ConditionCode>
+    </cac:Status>
+    <sac:TotalAmount currencyID="PEN">10.00</sac:TotalAmount>
+    <sac:BillingPayment>
+      <cbc:PaidAmount currencyID="PEN">10.00</cbc:PaidAmount>
+      <cbc:InstructionID>01</cbc:InstructionID>
+    </sac:BillingPayment>
+  </sac:SummaryDocumentsLine>
+  <sac:SummaryDocumentsLine>
+    <cbc:LineID>3</cbc:LineID>
+    <cbc:DocumentTypeCode>03</cbc:DocumentTypeCode>
+    <cbc:ID>B017-2087</cbc:ID>
+    <cac:AccountingCustomerParty>
+      <cbc:CustomerAssignedAccountID>99999999</cbc:CustomerAssignedAccountID>
+      <cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+    </cac:AccountingCustomerParty>
+    <cac:Status>
+      <cbc:ConditionCode>1</cbc:ConditionCode>
+    </cac:Status>
+    <sac:TotalAmount currencyID="PEN">30.00</sac:TotalAmount>
+    <sac:BillingPayment>
+      <cbc:PaidAmount currencyID="PEN">30.00</cbc:PaidAmount>
+      <cbc:InstructionID>01</cbc:InstructionID>
+    </sac:BillingPayment>
+  </sac:SummaryDocumentsLine>
+</SummaryDocuments>

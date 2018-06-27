@@ -1,0 +1,12 @@
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\bin\Debug\OpenInvoicePeru.Servicio.Soap.dll.config
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\bin\Debug\OpenInvoicePeru.Servicio.Soap.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\bin\Debug\OpenInvoicePeru.Servicio.Soap.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\bin\Debug\Microsoft.Web.Services3.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\bin\Debug\OpenInvoicePeru.Comun.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\bin\Debug\OpenInvoicePeru.Servicio.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\bin\Debug\OpenInvoicePeru.Comun.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\bin\Debug\OpenInvoicePeru.Servicio.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\obj\Debug\OpenInvoicePeru.Servicio.Soap.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\obj\Debug\OpenInvoicePeru.Servicio.Soap.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\obj\Debug\OpenInvoicePeru.Servicio.Soap.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Servicio.Soap\obj\Debug\OpenInvoicePeru.Servicio.Soap.pdb

@@ -1,0 +1,63 @@
+----------------------------------------
+Timestamp: 16/05/2018 22:19:05
+
+Message: HandlingInstanceID: e5e04833-8ca8-4c01-87fe-8c494c167baf
+An exception of type 'System.ServiceModel.ProtocolException' occurred and was caught.
+-------------------------------------------------------------------------------------
+05/16/2018 17:19:04
+Type : System.ServiceModel.ProtocolException, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The formatter threw an exception while trying to deserialize the message: There was an error while trying to deserialize parameter http://tempuri.org/:ventaPetroamericaInfo. The InnerException message was 'Error in line 1 position 1942. 'Element' '_x003C_Item_x003E_k__BackingField' from namespace 'http://schemas.datacontract.org/2004/07/APU.Entidad' is not expected. Expecting element '_x003C_ComprobanteRelacionadoId_x003E_k__BackingField'.'.  Please see InnerException for more details.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+HResult : -2146233087
+Stack Trace : 
+Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en APU.Negocio.WS_Gasolutions.IGasolutions.VentaGasolutions_Insertar(VentaGasolutionsInfo ventaPetroamericaInfo)
+   en APU.Negocio.WS_Gasolutions.GasolutionsClient.VentaGasolutions_Insertar(VentaGasolutionsInfo ventaPetroamericaInfo) en C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Negocio\Connected Services\WS_Gasolutions\Reference.cs:línea 1853
+   en APU.Negocio.VentaGasolutions.Insertar(String ventaXml) en C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Negocio\VentaGasolutions.cs:línea 360
+
+Additional Info:
+
+MachineName : SISTEMAS01
+TimeStamp : 16/05/2018 22:19:05
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/3/ROOT-1-131709822042614322
+ThreadIdentity : 
+WindowsIdentity : SISTEMAS01\developer
+
+
+Category: PA.Login
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: SISTEMAS01
+
+App Domain: /LM/W3SVC/3/ROOT-1-131709822042614322
+
+ProcessId: 13700
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:12864
+
+Extended Properties: 
+----------------------------------------

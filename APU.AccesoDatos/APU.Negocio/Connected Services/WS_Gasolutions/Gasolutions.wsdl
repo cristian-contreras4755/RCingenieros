@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Gasolutions" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/APU.Entidad" />
+      <xsd:import schemaLocation="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/APU.Negocio" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGasolutions_VentaGasolutions_ListarCodigo_InputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_ListarCodigo" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_ListarCodigo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_ListarCodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_Insertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_Insertar" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_Insertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_InsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_InsertarLote_InputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_InsertarLote" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_InsertarLote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_InsertarLoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_InsertarXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_InsertarXml" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_InsertarXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_InsertarXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_InsertarGnvXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_InsertarGnvXml" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_InsertarGnvXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_InsertarGnvXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_GenerarDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarDocumento" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_GenerarDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_InsertarNotaCreditoXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_InsertarNotaCreditoXml" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_InsertarNotaCreditoXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_InsertarNotaCreditoXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_InsertarNotaDebitoXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_InsertarNotaDebitoXml" />
+  </wsdl:message>
+  <wsdl:message name="IGasolutions_VentaGasolutions_InsertarNotaDebitoXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VentaGasolutions_InsertarNotaDebitoXmlResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGasolutions">
+    <wsdl:operation name="VentaGasolutions_ListarCodigo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_ListarCodigo" message="tns:IGasolutions_VentaGasolutions_ListarCodigo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_ListarCodigoResponse" message="tns:IGasolutions_VentaGasolutions_ListarCodigo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_Insertar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_Insertar" message="tns:IGasolutions_VentaGasolutions_Insertar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarResponse" message="tns:IGasolutions_VentaGasolutions_Insertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_InsertarLote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarLote" message="tns:IGasolutions_VentaGasolutions_InsertarLote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarLoteResponse" message="tns:IGasolutions_VentaGasolutions_InsertarLote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_InsertarXml">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarXml" message="tns:IGasolutions_VentaGasolutions_InsertarXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarXmlResponse" message="tns:IGasolutions_VentaGasolutions_InsertarXml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_InsertarGnvXml">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarGnvXml" message="tns:IGasolutions_VentaGasolutions_InsertarGnvXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarGnvXmlResponse" message="tns:IGasolutions_VentaGasolutions_InsertarGnvXml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarDocumento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGasolutions/GenerarDocumento" message="tns:IGasolutions_GenerarDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGasolutions/GenerarDocumentoResponse" message="tns:IGasolutions_GenerarDocumento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_InsertarNotaCreditoXml">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarNotaCreditoXml" message="tns:IGasolutions_VentaGasolutions_InsertarNotaCreditoXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarNotaCreditoXmlResponse" message="tns:IGasolutions_VentaGasolutions_InsertarNotaCreditoXml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_InsertarNotaDebitoXml">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarNotaDebitoXml" message="tns:IGasolutions_VentaGasolutions_InsertarNotaDebitoXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarNotaDebitoXmlResponse" message="tns:IGasolutions_VentaGasolutions_InsertarNotaDebitoXml_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IGasolutions" type="tns:IGasolutions">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VentaGasolutions_ListarCodigo">
+      <soap:operation soapAction="http://tempuri.org/IGasolutions/VentaGasolutions_ListarCodigo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_Insertar">
+      <soap:operation soapAction="http://tempuri.org/IGasolutions/VentaGasolutions_Insertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_InsertarLote">
+      <soap:operation soapAction="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarLote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_InsertarXml">
+      <soap:operation soapAction="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_InsertarGnvXml">
+      <soap:operation soapAction="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarGnvXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarDocumento">
+      <soap:operation soapAction="http://tempuri.org/IGasolutions/GenerarDocumento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_InsertarNotaCreditoXml">
+      <soap:operation soapAction="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarNotaCreditoXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VentaGasolutions_InsertarNotaDebitoXml">
+      <soap:operation soapAction="http://tempuri.org/IGasolutions/VentaGasolutions_InsertarNotaDebitoXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Gasolutions">
+    <wsdl:port name="BasicHttpBinding_IGasolutions" binding="tns:BasicHttpBinding_IGasolutions">
+      <soap:address location="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

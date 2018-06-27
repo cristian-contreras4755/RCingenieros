@@ -1,0 +1,6 @@
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Entidad\bin\Debug\APU.Entidad.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Entidad\bin\Debug\APU.Entidad.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Entidad\obj\Debug\APU.Entidad.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Entidad\obj\Debug\APU.Entidad.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Entidad\obj\Debug\APU.Entidad.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Entidad\obj\Debug\APU.Entidad.csprojResolveAssemblyReference.cache

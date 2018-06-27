@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E28BCE9-DFC1-4462-9E7D-970B2CAD0F66}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APU.Presentacion</RootNamespace>
+    <AssemblyName>APU.Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <IncludeIisSettings>false</IncludeIisSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=17.1.2.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Componentes\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Componentes\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Componentes\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Componentes\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Componentes\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="NReco.PdfGenerator, Version=1.1.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Componentes\NReco.PdfGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Componentes\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="tessnet2_32, Version=2.0.4.0, Culture=neutral, PublicKeyToken=1550524b5ba07e29, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Componentes\tessnet2_32.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.0.0, Culture=neutral, PublicKeyToken=830ae994e36ac27d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Componentes\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Almacen\IngresoAlmacen.aspx" />
+    <Content Include="Almacen\ConsultaStocks.aspx" />
+    <Content Include="Almacen\Productos.aspx" />
+    <Content Include="Archivos\Imagenes\petroamerica_logo.png" />
+    <Content Include="Archivos\Plantillas\Boleta.html" />
+    <Content Include="Archivos\Plantillas\BoletaPetroamerica.html" />
+    <Content Include="Archivos\Plantillas\BoletaApu.html" />
+    <Content Include="Archivos\Plantillas\FacturaPetroamerica.html" />
+    <Content Include="Archivos\Plantillas\Factura.html" />
+    <Content Include="Archivos\Plantillas\FacturaApu.html" />
+    <Content Include="Componentes\Newtonsoft.Json.dll" />
+    <Content Include="Componentes\RestSharp.dll" />
+    <Content Include="Componentes\tessnet2_32.dll" />
+    <Content Include="Componentes\zxing.dll" />
+    <Content Include="Configuracion\Turno.aspx" />
+    <Content Include="Configuracion\Parametro.aspx" />
+    <Content Include="Configuracion\TipoCambio.aspx" />
+    <Content Include="Configuracion\Almacen.aspx" />
+    <Content Include="Configuracion\Agencia.aspx" />
+    <Content Include="Configuracion\Empresa.aspx" />
+    <Content Include="Configuracion\Cliente.aspx" />
+    <Content Include="Connected Services\WS_BETA\APU.Presentacion.WS_BETA.getStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_BETA\APU.Presentacion.WS_BETA.sendBillResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_BETA\APU.Presentacion.WS_BETA.sendPackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_BETA\APU.Presentacion.WS_BETA.sendSummaryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_BETA\APU.Presentacion.WS_BETA.statusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Componentes\tessdata\eng.DangAmbigs" />
+    <Content Include="Componentes\tessdata\eng.freq-dawg" />
+    <Content Include="Componentes\tessdata\eng.inttemp" />
+    <Content Include="Componentes\tessdata\eng.normproto" />
+    <Content Include="Componentes\tessdata\eng.pffmtable" />
+    <Content Include="Componentes\tessdata\eng.unicharset" />
+    <Content Include="Componentes\tessdata\eng.user-words" />
+    <Content Include="Componentes\tessdata\eng.word-dawg" />
+    <Content Include="Archivos\Facturacion\certificado.pfx" />
+    <None Include="Connected Services\WS_BETA\configuration91.svcinfo" />
+    <None Include="Connected Services\WS_BETA\configuration.svcinfo" />
+    <None Include="Connected Services\WS_BETA\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\WS_SUNAT\APU.Presentacion.WS_SUNAT.getStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_SUNAT\APU.Presentacion.WS_SUNAT.sendBillResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_SUNAT\APU.Presentacion.WS_SUNAT.sendSummaryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_SUNAT\APU.Presentacion.WS_SUNAT.statusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WS_BETA\billService.wsdl" />
+    <None Include="Connected Services\WS_BETA\billService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WS_BETA\billService1.wsdl" />
+    <None Include="Connected Services\WS_SUNAT\configuration91.svcinfo" />
+    <None Include="Connected Services\WS_SUNAT\configuration.svcinfo" />
+    <None Include="Connected Services\WS_SUNAT\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Gasolutions\Venta.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Imagenes\CerrosApu.jpg" />
+    <Content Include="Imagenes\fondo_inicio.jpg" />
+    <Content Include="Imagenes\Iconos\almacen.png" />
+    <Content Include="Imagenes\Iconos\interrogacion.png" />
+    <Content Include="Imagenes\Iconos\agencia.png" />
+    <Content Include="Imagenes\Iconos\nuevo_cliente.png" />
+    <Content Include="Imagenes\Iconos\seleccionar.png" />
+    <Content Include="Imagenes\logo-primax-sm.png" />
+    <Content Include="Imagenes\LogoApu.jpg" />
+    <Content Include="Imagenes\LogoPrimax.png" />
+    <Content Include="Imagenes\petroamerica_logo.png" />
+    <Content Include="Imagenes\uploading.gif" />
+    <Content Include="Inicio.aspx" />
+    <Content Include="Maestros\Proveedor.aspx" />
+    <Content Include="Maestros\SubTipoProducto.aspx" />
+    <Content Include="Maestros\TipoProducto.aspx" />
+    <Content Include="Operaciones\DetalleCompra.aspx" />
+    <Content Include="Operaciones\Compra.aspx" />
+    <Content Include="Operaciones\Comprobante.aspx" />
+    <Content Include="Operaciones\EnvioSunat.aspx" />
+    <Content Include="Operaciones\Venta.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Estilos\Bootstrap\Bootstrap.zip" />
+    <Content Include="Estilos\Bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Estilos\Bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Estilos\Bootstrap\css\bootstrap.css.map" />
+    <Content Include="Estilos\Bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Estilos\Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Estilos\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Estilos\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Estilos\Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-Black.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-BlackItalic.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-Bold.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-BoldItalic.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-Italic.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-Light.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-LightItalic.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-Medium.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-MediumItalic.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-Regular.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-Thin.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\Roboto-ThinItalic.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\RobotoCondensed-Bold.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\RobotoCondensed-BoldItalic.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\RobotoCondensed-Italic.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\RobotoCondensed-Light.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\RobotoCondensed-LightItalic.ttf" />
+    <Content Include="Estilos\Fuentes\Roboto\RobotoCondensed-Regular.ttf" />
+    <Content Include="Parametros\Correlativo.aspx" />
+    <Content Include="Petroamerica\Venta.aspx" />
+    <Content Include="PruebaSunat.aspx" />
+    <Content Include="Scripts\accounting\accounting.js" />
+    <Content Include="Scripts\accounting\accounting.min.js" />
+    <Content Include="Scripts\autoNumeric\autoNumeric.js" />
+    <Content Include="Scripts\dhtmlxCalendar\calendar.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\codebase\dhtmlxcalendar.css" />
+    <Content Include="Scripts\dhtmlxCalendar\codebase\dhtmlxcalendar.js" />
+    <Content Include="Scripts\dhtmlxCalendar\codebase\dhtmlxcalendar_deprecated.js" />
+    <Content Include="Scripts\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_arrow_left.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_arrow_right.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_clock.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_mark.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_selector_bottom.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_selector_top.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\dhtmlxcalendar.css" />
+    <Content Include="Scripts\dhtmlxCalendar\dhtmlxcalendar.js" />
+    <Content Include="Scripts\dhtmlxCalendar\docs\index.html" />
+    <Content Include="Scripts\dhtmlxCalendar\imgs\dhxcalendar_skyblue\dhxcalendar_arrow_left.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\imgs\dhxcalendar_skyblue\dhxcalendar_arrow_right.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\imgs\dhxcalendar_skyblue\dhxcalendar_clock.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\imgs\dhxcalendar_skyblue\dhxcalendar_mark.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\imgs\dhxcalendar_skyblue\dhxcalendar_selector_bottom.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\imgs\dhxcalendar_skyblue\dhxcalendar_selector_top.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\License_gpl_2.0.txt" />
+    <Content Include="Scripts\dhtmlxCalendar\readme.txt" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\01_init\!!samples.xml" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\01_init\01_attach_to_input.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\01_init\02_attach_to_input_with_icon.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\01_init\03_attach_to_icon.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\01_init\04_attach_to_form.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\01_init\05_attach_to_toolbar.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\01_init\06_custom_parent.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\01_init\07_change_parent.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\01_init\08_attach_dynamically.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\02_intervals\!!samples.xml" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\02_intervals\01_set_interval_with_two_inputs.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\02_intervals\02_dbl_calendar.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\03_range_and_dis\!!samples.xml" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\03_range_and_dis\01_sensitive_range.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\03_range_and_dis\02_insensitive_days.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\03_range_and_dis\03_disabling_in_week_mode.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\03_range_and_dis\04_disabling_in_month_mode.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\03_range_and_dis\05_disabling_in_year_mode.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\03_range_and_dis\06_holidays.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\04_other\!!samples.xml" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\04_other\01_skins.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\04_other\02_language.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\04_other\03_week_start_day.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\04_other\04_show_month.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\04_other\05_show_time.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\04_other\06_show_week_numbers.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\04_other\07_tooltips.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\04_other\08_tooltips_with_popup.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\04_other\09_minutes_interval.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\05_events\!!samples.xml" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\05_events\01_onshow_onhide.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\05_events\02_onclick_onbeforechange.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\05_events\03_onclick_dbl_calendar.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\05_events\04_mouseover_mouseout.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\05_events\05_popupshow_popuphide.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\05_events\06_onchange_onarrowclick.html" />
+    <Content Include="Scripts\dhtmlxCalendar\samples\dhtmlxCalendar\common\calendar.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\skyblue\dhtmlxcalendar.css" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\skyblue\imgs\dhxcalendar_skyblue\dhxcalendar_arrow_left.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\skyblue\imgs\dhxcalendar_skyblue\dhxcalendar_arrow_right.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\skyblue\imgs\dhxcalendar_skyblue\dhxcalendar_clock.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\skyblue\imgs\dhxcalendar_skyblue\dhxcalendar_mark.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\skyblue\imgs\dhxcalendar_skyblue\dhxcalendar_selector_bottom.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\skyblue\imgs\dhxcalendar_skyblue\dhxcalendar_selector_top.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\terrace\dhtmlxcalendar.css" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\terrace\imgs\dhxcalendar_terrace\dhxcalendar_arrow_left.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\terrace\imgs\dhxcalendar_terrace\dhxcalendar_arrow_right.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\terrace\imgs\dhxcalendar_terrace\dhxcalendar_clock.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\terrace\imgs\dhxcalendar_terrace\dhxcalendar_mark.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\terrace\imgs\dhxcalendar_terrace\dhxcalendar_selector_bottom.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\terrace\imgs\dhxcalendar_terrace\dhxcalendar_selector_top.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\web\dhtmlxcalendar.css" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\web\imgs\dhxcalendar_web\dhxcalendar_arrow_left.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\web\imgs\dhxcalendar_web\dhxcalendar_arrow_left2.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\web\imgs\dhxcalendar_web\dhxcalendar_arrow_right.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\web\imgs\dhxcalendar_web\dhxcalendar_arrow_right2.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\web\imgs\dhxcalendar_web\dhxcalendar_clock.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\web\imgs\dhxcalendar_web\dhxcalendar_mark.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\web\imgs\dhxcalendar_web\dhxcalendar_selector_bottom.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\skins\web\imgs\dhxcalendar_web\dhxcalendar_selector_top.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\dhtmlxcalendar.js" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\dhtmlxcalendar_deprecated.js" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\ext\dhtmlxcalendar_double.js" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhtmlxcalendar_omega\arrow_left.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhtmlxcalendar_omega\arrow_left_hover.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhtmlxcalendar_omega\arrow_right.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhtmlxcalendar_omega\arrow_right_hover.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhtmlxcalendar_omega\bg_days.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhtmlxcalendar_omega\bg_main.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_arrow_left.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_arrow_right.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_clock.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_mark.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_selector_bottom.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_skyblue\dhxcalendar_selector_top.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_terrace\dhxcalendar_arrow_left.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_terrace\dhxcalendar_arrow_right.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_terrace\dhxcalendar_clock.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_terrace\dhxcalendar_mark.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_terrace\dhxcalendar_selector_bottom.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_terrace\dhxcalendar_selector_top.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_web\dhxcalendar_arrow_left.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_web\dhxcalendar_arrow_left2.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_web\dhxcalendar_arrow_right.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_web\dhxcalendar_arrow_right2.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_web\dhxcalendar_clock.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_web\dhxcalendar_mark.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_web\dhxcalendar_selector_bottom.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\imgs\dhxcalendar_web\dhxcalendar_selector_top.gif" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\skins\dhtmlxcalendar_dhx_skyblue.css" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\skins\dhtmlxcalendar_dhx_terrace.css" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCalendar\codebase\skins\dhtmlxcalendar_dhx_web.css" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\dhtmlxCommon\codebase\dhtmlxcommon.js" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\libCompiler\lib_compiler.php" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\libCompiler\yui.jar" />
+    <Content Include="Scripts\jQuery\jquery.mask.js" />
+    <None Include="Connected Services\WS_SUNAT\billService.wsdl" />
+    <None Include="Connected Services\WS_SUNAT\billService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WS_SUNAT\billService1.wsdl" />
+    <Content Include="Estilos\Fuentes\SairaSemiCondensed\SairaSemiCondensed-Black.ttf" />
+    <Content Include="Estilos\Fuentes\SairaSemiCondensed\SairaSemiCondensed-Bold.ttf" />
+    <Content Include="Estilos\Fuentes\SairaSemiCondensed\SairaSemiCondensed-ExtraBold.ttf" />
+    <Content Include="Estilos\Fuentes\SairaSemiCondensed\SairaSemiCondensed-ExtraLight.ttf" />
+    <Content Include="Estilos\Fuentes\SairaSemiCondensed\SairaSemiCondensed-Light.ttf" />
+    <Content Include="Estilos\Fuentes\SairaSemiCondensed\SairaSemiCondensed-Medium.ttf" />
+    <Content Include="Estilos\Fuentes\SairaSemiCondensed\SairaSemiCondensed-Regular.ttf" />
+    <Content Include="Estilos\Fuentes\SairaSemiCondensed\SairaSemiCondensed-SemiBold.ttf" />
+    <Content Include="Estilos\Fuentes\SairaSemiCondensed\SairaSemiCondensed-Thin.ttf" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\libCompiler\compile.bat" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\libCompiler\compile_debug.bat" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\libCompiler\conf\compressed_filename" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\libCompiler\conf\copyright" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\libCompiler\conf\stat_copy" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\libCompiler\conf\stat_css" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\libCompiler\conf\stat_depr" />
+    <Content Include="Scripts\dhtmlxCalendar\sources\libCompiler\conf\stat_js" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Componentes\AjaxControlToolkit.dll" />
+    <Content Include="Componentes\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Componentes\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
+    <Content Include="Componentes\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll" />
+    <Content Include="Componentes\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+    <Content Include="Componentes\NReco.PdfGenerator.dll" />
+    <Content Include="Controles\ucCabecera.ascx" />
+    <Content Include="Controles\ucMenu.ascx" />
+    <Content Include="Controles\ucProcesando.ascx" />
+    <Content Include="Estilos\apu.css" />
+    <Content Include="Estilos\Bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Estilos\Bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Estilos\Bootstrap\css\bootstrap.css" />
+    <Content Include="Estilos\Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Estilos\Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Estilos\Bootstrap\js\bootstrap.js" />
+    <Content Include="Estilos\Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Estilos\Bootstrap\js\npm.js" />
+    <Content Include="Imagenes\Iconos\abrir.png" />
+    <Content Include="Imagenes\Iconos\actualizar.png" />
+    <Content Include="Imagenes\Iconos\adjuntar.png" />
+    <Content Include="Imagenes\Iconos\borrar.png" />
+    <Content Include="Imagenes\Iconos\buscar.png" />
+    <Content Include="Imagenes\Iconos\calendario.png" />
+    <Content Include="Imagenes\Iconos\compras.png" />
+    <Content Include="Imagenes\Iconos\configurar.png" />
+    <Content Include="Imagenes\Iconos\editar.png" />
+    <Content Include="Imagenes\Iconos\email.png" />
+    <Content Include="Imagenes\Iconos\excel.png" />
+    <Content Include="Imagenes\Iconos\facebook.png" />
+    <Content Include="Imagenes\Iconos\flecha_izquierda.png" />
+    <Content Include="Imagenes\Iconos\guardar.png" />
+    <Content Include="Imagenes\Iconos\home.png" />
+    <Content Include="Imagenes\Iconos\IconoBuscar.png" />
+    <Content Include="Imagenes\Iconos\imprimir.png" />
+    <Content Include="Imagenes\Iconos\inicio.png" />
+    <Content Include="Imagenes\Iconos\link.png" />
+    <Content Include="Imagenes\Iconos\mensaje.png" />
+    <Content Include="Imagenes\Iconos\nuevo.png" />
+    <Content Include="Imagenes\Iconos\salir.png" />
+    <Content Include="Imagenes\loader.gif" />
+    <Content Include="Imagenes\logoRCIngenieros.png" />
+    <Content Include="Imagenes\logoRCIngenieros_full.png" />
+    <Content Include="Scripts\apu.js" />
+    <Content Include="Scripts\jQuery\jquery.js" />
+    <Content Include="Scripts\multiselect\css\bootstrap-multiselect.css" />
+    <Content Include="Scripts\multiselect\js\bootstrap-multiselect.js" />
+    <Content Include="Scripts\tablesorter\jquery.tablesorter.js" />
+    <Content Include="Scripts\tablesorter\jquery.tablesorter.min.js" />
+    <Content Include="Seguridad\Ingreso.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Seguridad\OpcionPorPerfil.aspx" />
+    <Content Include="Seguridad\Perfil.aspx" />
+    <Content Include="Seguridad\RecuperarClave.aspx" />
+    <Content Include="Seguridad\Usuario.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almacen\IngresoAlmacen.aspx.cs">
+      <DependentUpon>IngresoAlmacen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almacen\IngresoAlmacen.aspx.designer.cs">
+      <DependentUpon>IngresoAlmacen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\ConsultaStocks.aspx.cs">
+      <DependentUpon>ConsultaStocks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almacen\ConsultaStocks.aspx.designer.cs">
+      <DependentUpon>ConsultaStocks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almacen\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Turno.aspx.cs">
+      <DependentUpon>Turno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Turno.aspx.designer.cs">
+      <DependentUpon>Turno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Parametro.aspx.cs">
+      <DependentUpon>Parametro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Parametro.aspx.designer.cs">
+      <DependentUpon>Parametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\TipoCambio.aspx.cs">
+      <DependentUpon>TipoCambio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuracion\TipoCambio.aspx.designer.cs">
+      <DependentUpon>TipoCambio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Almacen.aspx.cs">
+      <DependentUpon>Almacen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Almacen.aspx.designer.cs">
+      <DependentUpon>Almacen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Agencia.aspx.cs">
+      <DependentUpon>Agencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Agencia.aspx.designer.cs">
+      <DependentUpon>Agencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Empresa.aspx.cs">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Empresa.aspx.designer.cs">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Cliente.aspx.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Cliente.aspx.designer.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WS_BETA\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WS_SUNAT\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucCabecera.ascx.cs">
+      <DependentUpon>ucCabecera.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ucCabecera.ascx.designer.cs">
+      <DependentUpon>ucCabecera.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucMenu.ascx.cs">
+      <DependentUpon>ucMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ucMenu.ascx.designer.cs">
+      <DependentUpon>ucMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucProcesando.ascx.cs">
+      <DependentUpon>ucProcesando.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ucProcesando.ascx.designer.cs">
+      <DependentUpon>ucProcesando.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Gasolutions\Venta.aspx.cs">
+      <DependentUpon>Venta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gasolutions\Venta.aspx.designer.cs">
+      <DependentUpon>Venta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\Proveedor.aspx.cs">
+      <DependentUpon>Proveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\Proveedor.aspx.designer.cs">
+      <DependentUpon>Proveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\SubTipoProducto.aspx.cs">
+      <DependentUpon>SubTipoProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\SubTipoProducto.aspx.designer.cs">
+      <DependentUpon>SubTipoProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\TipoProducto.aspx.cs">
+      <DependentUpon>TipoProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\TipoProducto.aspx.designer.cs">
+      <DependentUpon>TipoProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones\Compra.aspx.cs">
+      <DependentUpon>Compra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operaciones\Compra.aspx.designer.cs">
+      <DependentUpon>Compra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones\Comprobante.aspx.cs">
+      <DependentUpon>Comprobante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operaciones\Comprobante.aspx.designer.cs">
+      <DependentUpon>Comprobante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones\DetalleCompra.aspx.cs">
+      <DependentUpon>DetalleCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operaciones\DetalleCompra.aspx.designer.cs">
+      <DependentUpon>DetalleCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones\EnvioSunat.aspx.cs">
+      <DependentUpon>EnvioSunat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operaciones\EnvioSunat.aspx.designer.cs">
+      <DependentUpon>EnvioSunat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones\Venta.aspx.cs">
+      <DependentUpon>Venta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operaciones\Venta.aspx.designer.cs">
+      <DependentUpon>Venta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parametros\Correlativo.aspx.cs">
+      <DependentUpon>Correlativo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parametros\Correlativo.aspx.designer.cs">
+      <DependentUpon>Correlativo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Petroamerica\Venta.aspx.cs">
+      <DependentUpon>Venta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Petroamerica\Venta.aspx.designer.cs">
+      <DependentUpon>Venta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PruebaSunat.aspx.cs">
+      <DependentUpon>PruebaSunat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PruebaSunat.aspx.designer.cs">
+      <DependentUpon>PruebaSunat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RestHelper.cs" />
+    <Compile Include="Seguridad\Ingreso.aspx.cs">
+      <DependentUpon>Ingreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Ingreso.aspx.designer.cs">
+      <DependentUpon>Ingreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\OpcionPorPerfil.aspx.cs">
+      <DependentUpon>OpcionPorPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad\OpcionPorPerfil.aspx.designer.cs">
+      <DependentUpon>OpcionPorPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\RecuperarClave.aspx.cs">
+      <DependentUpon>RecuperarClave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad\RecuperarClave.aspx.designer.cs">
+      <DependentUpon>RecuperarClave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APU.Entidad\APU.Entidad.csproj">
+      <Project>{93249482-4e1a-4350-9d73-72665feafa6f}</Project>
+      <Name>APU.Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\APU.Herramientas\APU.Herramientas.csproj">
+      <Project>{7ca83d33-da28-435a-b74a-609d7d9d909e}</Project>
+      <Name>APU.Herramientas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\APU.Negocio\APU.Negocio.csproj">
+      <Project>{2c717d43-2d9a-476f-af06-da83aac91f73}</Project>
+      <Name>APU.Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenInvoicePeru.Comun.Dto\OpenInvoicePeru.Comun.Dto.csproj">
+      <Project>{a265a65a-c2a9-4f9e-b272-bed5ed04df98}</Project>
+      <Name>OpenInvoicePeru.Comun.Dto</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WS_BETA\" />
+    <WCFMetadataStorage Include="Connected Services\WS_SUNAT\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Archivos\Documentos\Empresa\" />
+    <Folder Include="Archivos\Facturacion\CDR\" />
+    <Folder Include="Archivos\Facturacion\XML\" />
+    <Folder Include="Archivos\Imagenes\Empresa\" />
+    <Folder Include="Archivos\Imagenes\Usuario\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Archivos\Facturacion\certificado.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56746</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:88/APU.Presentacion</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

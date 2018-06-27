@@ -1,0 +1,132 @@
+----------------------------------------
+Timestamp: 16/05/2018 22:36:02
+
+Message: HandlingInstanceID: ec6042d9-c755-4300-9516-fe345873bd32
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+05/16/2018 17:36:02
+Type : System.Data.SqlClient.SqlException, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Procedure or function 'InsertarVentaGasolutions' expects parameter '@UbigeoEmisor', which was not supplied.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+ClientConnectionId : a8379fb9-ee7e-405f-b99a-ca863c0aa06b
+Class : 16
+LineNumber : 0
+Number : 201
+Procedure : InsertarVentaGasolutions
+Server : SISTEMAS01
+State : 4
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Int32 Insertar(APU.Entidad.VentaGasolutionsInfo)
+HResult : -2146232060
+Stack Trace :    en APU.AccesoDatos.VentaGasolutionsAccesoDatos.Insertar(VentaGasolutionsInfo ventaInfo) en C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\VentaGasolutionsAccesoDatos.cs:línea 233
+   en APU.Negocio.VentaGasolutions.Insertar(VentaGasolutionsInfo ventaInfo) en C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Negocio\VentaGasolutions.cs:línea 39
+
+Additional Info:
+
+MachineName : SISTEMAS01
+TimeStamp : 16/05/2018 22:36:02
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/2/ROOT/APU.WCF.Gasolutions-1-131709833653640540
+ThreadIdentity : 
+WindowsIdentity : SISTEMAS01\developer
+
+
+Category: PA.Login
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: SISTEMAS01
+
+App Domain: /LM/W3SVC/2/ROOT/APU.WCF.Gasolutions-1-131709833653640540
+
+ProcessId: 17348
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:11728
+
+Extended Properties: HelpLink.ProdName - Microsoft SQL Server
+HelpLink.ProdVer - 14.00.1000
+HelpLink.EvtSrc - MSSQLServer
+HelpLink.EvtID - 201
+HelpLink.BaseHelpUrl - http://go.microsoft.com/fwlink
+HelpLink.LinkId - 20476
+
+----------------------------------------
+----------------------------------------
+Timestamp: 16/05/2018 22:47:44
+
+Message: HandlingInstanceID: db0a4f72-85b1-4c9f-ac35-56a38405058e
+An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.
+----------------------------------------------------------------------------------
+05/16/2018 17:47:44
+Type : System.Data.SqlClient.SqlException, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Procedure or function 'InsertarVentaDetalleGasolutions' expects parameter '@Descripcion', which was not supplied.
+Source : .Net SqlClient Data Provider
+Help link : 
+Errors : System.Data.SqlClient.SqlErrorCollection
+ClientConnectionId : 30104f78-5bc5-450c-ab95-38c5d593d3a9
+Class : 16
+LineNumber : 0
+Number : 201
+Procedure : InsertarVentaDetalleGasolutions
+Server : SISTEMAS01
+State : 4
+ErrorCode : -2146232060
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Int32 InsertarDetalle(APU.Entidad.VentaDetalleGasolutionsInfo)
+HResult : -2146232060
+Stack Trace :    en APU.AccesoDatos.VentaGasolutionsAccesoDatos.InsertarDetalle(VentaDetalleGasolutionsInfo ventaInfo) en C:\Users\developer\Desktop\backups Petroamerica\APU\APU.AccesoDatos\VentaGasolutionsAccesoDatos.cs:línea 266
+   en APU.Negocio.VentaGasolutions.Insertar(VentaGasolutionsInfo ventaInfo) en C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Negocio\VentaGasolutions.cs:línea 58
+
+Additional Info:
+
+MachineName : SISTEMAS01
+TimeStamp : 16/05/2018 22:47:44
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/2/ROOT/APU.WCF.Gasolutions-1-131709833653640540
+ThreadIdentity : 
+WindowsIdentity : SISTEMAS01\developer
+
+
+Category: PA.Login
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: SISTEMAS01
+
+App Domain: /LM/W3SVC/2/ROOT/APU.WCF.Gasolutions-1-131709833653640540
+
+ProcessId: 17348
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:11396
+
+Extended Properties: HelpLink.ProdName - Microsoft SQL Server
+HelpLink.ProdVer - 14.00.1000
+HelpLink.EvtSrc - MSSQLServer
+HelpLink.EvtID - 201
+HelpLink.BaseHelpUrl - http://go.microsoft.com/fwlink
+HelpLink.LinkId - 20476
+
+----------------------------------------

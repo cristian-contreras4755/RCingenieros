@@ -1,0 +1,11 @@
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Herramientas\bin\Debug\APU.Herramientas.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Herramientas\bin\Debug\APU.Herramientas.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Herramientas\bin\Debug\APU.Entidad.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Herramientas\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Herramientas\bin\Debug\Newtonsoft.Json.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Herramientas\bin\Debug\APU.Entidad.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Herramientas\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Herramientas\obj\Debug\APU.Herramientas.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Herramientas\obj\Debug\APU.Herramientas.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Herramientas\obj\Debug\APU.Herramientas.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Herramientas\obj\Debug\APU.Herramientas.pdb

@@ -1,0 +1,2 @@
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Petroamerica\obj\Debug\APU.Petroamerica.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\APU.Petroamerica\obj\Debug\APU.Petroamerica.csprojResolveAssemblyReference.cache

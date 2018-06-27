@@ -1,0 +1,6 @@
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Entidades\bin\Debug\OpenInvoicePeru.Entidades.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Entidades\bin\Debug\OpenInvoicePeru.Entidades.pdb
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Entidades\obj\Debug\OpenInvoicePeru.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Entidades\obj\Debug\OpenInvoicePeru.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Entidades\obj\Debug\OpenInvoicePeru.Entidades.dll
+C:\Users\developer\Desktop\backups Petroamerica\APU\OpenInvoicePeru.Entidades\obj\Debug\OpenInvoicePeru.Entidades.pdb

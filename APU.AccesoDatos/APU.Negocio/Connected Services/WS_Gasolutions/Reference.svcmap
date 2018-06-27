@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="292b861c-5236-4005-a9fd-9193f7a1a0f2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Gasolutions.wsdl" MetadataType="Wsdl" ID="7bbae703-96a6-4f71-8f18-1032e3abc67a" SourceId="1" SourceUrl="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?wsdl" />
+    <MetadataFile FileName="Gasolutions.disco" MetadataType="Disco" ID="8351cc8a-c67b-4562-8660-f3d0667a500a" SourceId="1" SourceUrl="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?disco" />
+    <MetadataFile FileName="Gasolutions.xsd" MetadataType="Schema" ID="2aaa0180-c4b8-4781-bb66-3adfeb84caff" SourceId="1" SourceUrl="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?xsd=xsd3" />
+    <MetadataFile FileName="Gasolutions1.xsd" MetadataType="Schema" ID="c94509e4-8cb5-415a-a1b1-a9a6b92521c4" SourceId="1" SourceUrl="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?xsd=xsd0" />
+    <MetadataFile FileName="Gasolutions2.xsd" MetadataType="Schema" ID="ed6403ae-a0c2-416e-a922-5bff6b707f34" SourceId="1" SourceUrl="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?xsd=xsd1" />
+    <MetadataFile FileName="Gasolutions3.xsd" MetadataType="Schema" ID="9217e10d-9f95-4957-89e1-c2d8956ca7ac" SourceId="1" SourceUrl="http://localhost:88/APU.WCF.Gasolutions/Gasolutions.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
